@@ -5,8 +5,14 @@
 
   $.map(soundList, function(n, i) {
     var el;
-    el = $("<li/>").append($("<button/>").attr('name', n).attr('onclick', 'play(this);').html(n));
-    return $('.container').append(el);
+    el = $("<button/>").html(n);
+    $('.container').append($("<li/>").append(el));
+    return el.click(function() {
+      var audio, file_path;
+      file_path = './sounds/' + n + ".mp3";
+      audio = new Audio(file_path);
+      return audio.play();
+    });
   });
 
 }).call(this);
