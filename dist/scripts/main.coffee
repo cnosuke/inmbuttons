@@ -10,10 +10,13 @@ p = (arg) ->
 ws = new WebSocket "ws://lab.cnosuke.com:55555"
 
 ws.onclose = ->
-        p "closed."
+	p "closed."
 
-ws.onopen =->
-      	p "connected."
+ws.onopen = ->
+	p "connected."
+
+changeClientCounts = (c) ->
+	$("#howmany").html c
 
 playInm = (file) ->
 	p "play: " + file
@@ -27,11 +30,16 @@ $.map soundList, (n,i)->
 	el.click ->
 		p 'click button'
 		playInm n
-		ws.send JSON.stringify({"clientId": clientId, "name": n})
+		ws.send JSON.stringify({"clientId": clientId, "name": n, "event": "playInm"})
 
 ws.onmessage = (evt) ->
         p "recieving"
-        obj = JSON.parse(evt.data);
-        if(obj.cliendId != clientId)
-        	playInm obj.name
+        obj = JSON.parse(evt.data)
+        p obj
+
+        if obj.event == "changeClientCounts"
+        	changeClientCounts(obj.clientCounts)
+        else	
+	        if obj.cliendId != clientId
+    	    	playInm obj.name
 

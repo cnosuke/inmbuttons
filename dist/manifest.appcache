@@ -1,7 +1,9 @@
 # connected. (undefined, #undefined)
+# recieving (undefined, #undefined)
+# [object Object] (undefined, #undefined)
 CACHE MANIFEST
 
-# Time: Tue Dec 25 2012 12:34:02 GMT+0900 (JST)
+# Time: Tue Dec 25 2012 13:22:51 GMT+0900 (JST)
 # This manifest was created by confess.js, http://github.com/jamesgpearce/confess
 #
 # Retrieved URL: http://localhost:3501/
@@ -26,7 +28,7 @@ http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js
 http://localhost:3501/img/glyphicons-halflings-white.png
 http://localhost:3501/img/glyphicons-halflings.png
 http://www.google-analytics.com/ga.js
-scripts/a20c5e1a.main.js
+scripts/268bcda6.main.js
 scripts/vendor/cf69c6f2.modernizr.min.js
 styles/7fdddff6.css3btn.css
 styles/96dcc0cf.main.css
