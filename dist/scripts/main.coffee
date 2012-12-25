@@ -25,8 +25,8 @@ playInm = (file) ->
 	audio.play()
 
 $.map soundList, (n,i)->
-	el = $("<button/>").addClass('inmb').attr('id','b_'+n).html(n)
-	$('.container').append($("<li/>").append el)
+	el = $("<button/>").html(n)
+	$('.container').append($("<li/>").addClass("inmli").append el)
 	el.click ->
 		p 'click button'
 		playInm n
@@ -43,3 +43,15 @@ ws.onmessage = (evt) ->
 	        if obj.cliendId != clientId
     	    	playInm obj.name
 
+
+$( "#inm_text" ).autocomplete {
+			source: soundList,
+			delay: 100,
+			autoFocus: true,
+			select: ( event, ui ) ->
+				n = ui.item.value
+				playInm n
+				ws.send JSON.stringify({"clientId": clientId, "name": n, "event": "playInm"})
+				
+		}
+		

@@ -3,7 +3,7 @@
 # [object Object] (undefined, #undefined)
 CACHE MANIFEST
 
-# Time: Tue Dec 25 2012 13:22:51 GMT+0900 (JST)
+# Time: Tue Dec 25 2012 18:50:58 GMT+0900 (JST)
 # This manifest was created by confess.js, http://github.com/jamesgpearce/confess
 #
 # Retrieved URL: http://localhost:3501/
@@ -24,14 +24,31 @@ CACHE MANIFEST
 #  configFile: /usr/local/lib/node_modules/yeoman/lib/support/confess.json
 
 CACHE:
+components/jquery-ui/themes/base/jquery-ui.css
+components/jquery-ui/themes/base/jquery.ui.autocomplete.css
+components/jquery-ui/ui/minified/jquery-ui.min.js
+components/jquery-ui/ui/minified/jquery.ui.autocomplete.min.js
 http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js
+http://localhost:3501/components/jquery-ui/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png
+http://localhost:3501/components/jquery-ui/themes/base/images/ui-bg_flat_75_ffffff_40x100.png
+http://localhost:3501/components/jquery-ui/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png
+http://localhost:3501/components/jquery-ui/themes/base/images/ui-bg_glass_65_ffffff_1x400.png
+http://localhost:3501/components/jquery-ui/themes/base/images/ui-bg_glass_75_dadada_1x400.png
+http://localhost:3501/components/jquery-ui/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png
+http://localhost:3501/components/jquery-ui/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png
+http://localhost:3501/components/jquery-ui/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+http://localhost:3501/components/jquery-ui/themes/base/images/ui-icons_222222_256x240.png
+http://localhost:3501/components/jquery-ui/themes/base/images/ui-icons_2e83ff_256x240.png
+http://localhost:3501/components/jquery-ui/themes/base/images/ui-icons_454545_256x240.png
+http://localhost:3501/components/jquery-ui/themes/base/images/ui-icons_888888_256x240.png
+http://localhost:3501/components/jquery-ui/themes/base/images/ui-icons_cd0a0a_256x240.png
 http://localhost:3501/img/glyphicons-halflings-white.png
 http://localhost:3501/img/glyphicons-halflings.png
 http://www.google-analytics.com/ga.js
-scripts/268bcda6.main.js
+scripts/8b1dab41.main.js
 scripts/vendor/cf69c6f2.modernizr.min.js
 styles/7fdddff6.css3btn.css
-styles/96dcc0cf.main.css
+styles/aa303534.main.css
 
 NETWORK:
 *
